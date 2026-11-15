@@ -1,0 +1,93 @@
+{
+  "comments": "21/08/2026: Cursor pagination is now available and is the preferred way to page through the feed. Pass the nextCursor value from each response back as ?cursor=. It is faster than offset and will never return the same job twice. The offset parameter is deprecated and will be removed in a future release. 13/03/2026: The API has been updated to include the companySlug field in the response.",
+  "updatedAt": 1794729419,
+  "offset": 0,
+  "limit": 3,
+  "totalCount": 118972,
+  "nextCursor": "MjAyNi0xMS0xNVQwNzozNDozMS43NzM3OTdafDI1NDk5NzY",
+  "jobs": [
+    {
+      "title": "Staff Backend Engineer - Grafana Enterprise | Canada | Remote",
+      "excerpt": "Grafana Labs is the company behind Grafana Cloud, the fully managed observability platform trusted by more than 10,000 organizations to ensure reliability, resolve incidents faster, and optimize telemetry at scale.",
+      "companyName": "Grafana Labs",
+      "companySlug": "grafana-labs",
+      "companyLogo": "https://cdn-images.himalayas.app/3gt8m9qgtvfixh7a82o2nkx9hogm",
+      "employmentType": "Full Time",
+      "minSalary": 186368,
+      "maxSalary": 223642,
+      "salaryPeriod": "annual",
+      "seniority": ["Senior"],
+      "currency": "CAD",
+      "locationRestrictions": ["Canada", "United States"],
+      "timezoneRestrictions": [-10, -9, -8, -7, -6, -5, -4, -3.5, 14],
+      "categories": [
+        "Backend-Engineer",
+        "Staff-Engineer",
+        "Software-Engineer",
+        "Distributed-Systems-Engineer",
+        "Observability-Engineer"
+      ],
+      "parentCategories": ["Developer"],
+      "description": "<div class=\"content-intro\">\n<p><a href=\"https://himalayas.app/companies/grafana-labs\">Grafana Labs</a> is the company behind Grafana Cloud, the fully managed observability platform trusted by more than 10,000 organizations to ensure reliability, resolve incidents faster, and optimize telemetry at scale. Built on open source and open standards and designed for interoperability across any stack, Grafana Cloud brings AI to observability and observability to AI, giving teams (and their agents) unified visibility so they can see, understand, and act on all their disparate data, wherever it lives, and move at the speed of their ambitions. Customers, including Anthropic, Bloomberg, NVIDIA, Microsoft, and Salesforce, rely on <a href=\"https://himalayas.app/companies/grafana-labs\">Grafana Labs</a>. ",
+      "pubDate": 1794729419,
+      "expiryDate": 1799913418,
+      "applicationLink": "https://himalayas.app/companies/grafana-labs/jobs/staff-backend-engineer-grafana-enterprise-canada-remote?utm_source=api",
+      "guid": "https://himalayas.app/companies/grafana-labs/jobs/staff-backend-engineer-grafana-enterprise-canada-remote"
+    },
+    {
+      "title": "Regional Sourcing Specialist",
+      "excerpt": "SUMMARYThe Sourcing Specialist organizes applicant pipelines for the recruitment team to engage candidates for temporary positions through PeopleReady.",
+      "companyName": "PeopleReady",
+      "companySlug": "peopleready",
+      "companyLogo": "https://cdn-images.himalayas.app/1ykkj1o52t7la6thh1tlz2plonwr",
+      "employmentType": "Full Time",
+      "minSalary": 46200,
+      "maxSalary": 57750,
+      "salaryPeriod": "annual",
+      "seniority": ["Mid-level"],
+      "currency": "USD",
+      "locationRestrictions": ["United States"],
+      "timezoneRestrictions": [-10, -9, -8, -7, -6, -5, 14],
+      "categories": [
+        "Sourcing-Specialist",
+        "Recruiter",
+        "Talent-Acquisition-Specialist",
+        "Recruitment-Coordinator"
+      ],
+      "parentCategories": ["Human Resources"],
+      "description": "<h3>SUMMARY</h3><p>The Sourcing Specialist organizes applicant pipelines for the recruitment team to engage candidates for temporary positions through <a href=\"https://himalayas.app/companies/peopleready\">PeopleReady</a>.</p><p><strong>Location</strong>: Remote (Pacific Time Zone)</p><h3>ESSENTIAL DUTIES and RESPONSIBILITIES</h3><ul>\n<li><p>Prepares and organizes applicant pipelines for recruitment team to engage candidates and refer to the branches.</p></li>\n<li><p>Develops and executes sophisticated strategic sourcing plans to proactively build a pipeline of broad, qualified and diverse talent pools for National Accounts, Inside Sales and other business verticals.</p></li>\n<li><p>Tracks and measure performance metrics related to sourcing and recruiting activities targeted campaign, and s",
+      "pubDate": 1794729305,
+      "expiryDate": 1799913305,
+      "applicationLink": "https://himalayas.app/companies/peopleready/jobs/regional-sourcing-specialist?utm_source=api",
+      "guid": "https://himalayas.app/companies/peopleready/jobs/regional-sourcing-specialist"
+    },
+    {
+      "title": "Director, ERP + Business Applications",
+      "excerpt": "C1 Company OverviewC1: 1 Contact, 1 Connection, 1 ChoiceC1 is the foremost, single-source provider of advanced communications and data technology for business.",
+      "companyName": "C1",
+      "companySlug": "c1-ai",
+      "companyLogo": "https://cdn-images.himalayas.app/84lsct298b9vbr86var7315t0y1z",
+      "employmentType": "Full Time",
+      "minSalary": 175000,
+      "maxSalary": 195000,
+      "salaryPeriod": "annual",
+      "seniority": ["Director"],
+      "currency": "USD",
+      "locationRestrictions": ["United States"],
+      "timezoneRestrictions": [-10, -9, -8, -7, -6, -5, 14],
+      "categories": [
+        "ERP-Director",
+        "Enterprise-Applications-Director",
+        "ERP-Program-Director",
+        "Director-Of-Business-Applications",
+        "IT-Director"
+      ],
+      "parentCategories": [],
+      "description": "<h3>\n<a href=\"https://himalayas.app/companies/c1-ai\">C1</a> Company Overview</h3><h3>\n<a href=\"https://himalayas.app/companies/c1-ai\">C1</a>: 1 Contact, 1 Connection, 1 Choice</h3><p><a href=\"https://himalayas.app/companies/c1-ai\">C1</a> is the foremost, single-source provider of advanced communications and data technology for business. That means if it's digital, we connect our customers to it -- from phone systems and hardware to computer networks, application development, managed solutions and more. And we're 100% passionate with designing, implementing, managing and supporting our customers' every need from end to end, so that they can focus on what they do best.</p><p>So, when it comes to joining a team of IT and communications technology pros who are empowered to do what they do best",
+      "pubDate": 1794728071,
+      "expiryDate": 1799912071,
+      "applicationLink": "https://himalayas.app/companies/c1-ai/jobs/director-erp-business-applications?utm_source=api",
+      "guid": "https://himalayas.app/companies/c1-ai/jobs/director-erp-business-applications"
+    }
+  ]
+}
