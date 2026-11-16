@@ -6,7 +6,7 @@ import { ConvexError } from "convex/values"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { useTheme } from "next-themes"
-import { useState } from "react"
+import { useState, useSyncExternalStore } from "react"
 
 import { AppShell } from "@/components/app-shell"
 import { ErrorState, Panel } from "@/components/states"
@@ -81,8 +81,18 @@ function Section({
   )
 }
 
+const noopSubscribe = () => () => {}
+
 function Appearance() {
-  const { theme, setTheme } = useTheme()
+  const { theme: storedTheme, setTheme } = useTheme()
+  // The stored theme only exists on the client; render "unknown" until
+  // hydrated so server and client markup match.
+  const mounted = useSyncExternalStore(
+    noopSubscribe,
+    () => true,
+    () => false
+  )
+  const theme = mounted ? storedTheme : undefined
   return (
     <Section title="Appearance">
       <div
