@@ -177,7 +177,11 @@ export const remove = mutation({
   args: { resumeId: v.id("resumes") },
   returns: v.null(),
   handler: async (ctx, args) => {
-    const resume = await requireOwnResume(ctx, args.resumeId)
+    const userId = await requireUserId(ctx)
+    const resume = await ctx.db.get("resumes", args.resumeId)
+    // Already deleted (double click, another tab): nothing left to do.
+    if (resume === null) return null
+    if (resume.userId !== userId) throw new ConvexError("Resume not found")
     // History per resume is small (analyses are rate-limited), so one
     // bounded batch covers it.
     const analyses = await ctx.db

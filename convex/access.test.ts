@@ -110,6 +110,18 @@ describe("resumes", () => {
     expect(await alice.as.query(api.resumes.listMine, {})).toHaveLength(1)
   })
 
+  test("deleting an already-deleted resume is a no-op", async () => {
+    const t = setup()
+    const alice = await signedInUser(t)
+    const resumeId = await storedResume(t, alice.userId, { status: "parsed" })
+
+    await alice.as.mutation(api.resumes.remove, { resumeId })
+    await expect(
+      alice.as.mutation(api.resumes.remove, { resumeId })
+    ).resolves.toBeNull()
+    expect(await alice.as.query(api.resumes.listMine, {})).toEqual([])
+  })
+
   test("signed-out callers get nothing", async () => {
     const t = setup()
     const alice = await signedInUser(t)
