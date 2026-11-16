@@ -24,8 +24,10 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { api } from "@/convex/_generated/api"
 
-// Mirrors the server rules in @convex-dev/auth (min 10 chars by default).
-const MIN_PASSWORD = 10
+// Mirrors the server rules in @convex-dev/auth as patched in
+// patches/@convex-dev__auth@2.0.0.patch: min 8 chars (the library's hard
+// floor), no common-password blocklist.
+const MIN_PASSWORD = 8
 
 const schema = z.object({
   username: z

@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  '@convex-dev/auth@2.0.0':
+    hash: a9df4ec51567cd231d1bedcdc88a8c16eb31c253bd13d9b0ef5d2a6e484c9cea
+    path: patches/@convex-dev__auth@2.0.0.patch
+
 importers:
 
   .:
@@ -13,7 +18,7 @@ importers:
         version: 1.9.0(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       '@convex-dev/auth':
         specifier: ^2.0.0
-        version: 2.0.0(@standard-schema/spec@1.1.0)(convex@1.50.0(react@19.3.1))(next@16.4.5(@babel/core@7.29.13)(@playwright/test@1.65.1)(@types/node@20.19.43)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(prettier@3.10.1)(react@19.3.1)(typescript@5.9.3)(zod@4.6.7)
+        version: 2.0.0(patch_hash=a9df4ec51567cd231d1bedcdc88a8c16eb31c253bd13d9b0ef5d2a6e484c9cea)(@standard-schema/spec@1.1.0)(convex@1.50.0(react@19.3.1))(next@16.4.5(@babel/core@7.29.13)(@playwright/test@1.65.1)(@types/node@20.19.43)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(prettier@3.10.1)(react@19.3.1)(typescript@5.9.3)(zod@4.6.7)
       '@convex-dev/rate-limiter':
         specifier: ^0.4.3
         version: 0.4.3(@standard-schema/spec@1.1.0)(convex@1.50.0(react@19.3.1))(prettier@3.10.1)(react@19.3.1)(typescript@5.9.3)(zod@4.6.7)
@@ -4145,7 +4150,7 @@ snapshots:
 
   '@borewit/text-codec@0.2.3': {}
 
-  '@convex-dev/auth@2.0.0(@standard-schema/spec@1.1.0)(convex@1.50.0(react@19.3.1))(next@16.4.5(@babel/core@7.29.13)(@playwright/test@1.65.1)(@types/node@20.19.43)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(prettier@3.10.1)(react@19.3.1)(typescript@5.9.3)(zod@4.6.7)':
+  '@convex-dev/auth@2.0.0(patch_hash=a9df4ec51567cd231d1bedcdc88a8c16eb31c253bd13d9b0ef5d2a6e484c9cea)(@standard-schema/spec@1.1.0)(convex@1.50.0(react@19.3.1))(next@16.4.5(@babel/core@7.29.13)(@playwright/test@1.65.1)(@types/node@20.19.43)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(prettier@3.10.1)(react@19.3.1)(typescript@5.9.3)(zod@4.6.7)':
     dependencies:
       '@convex-dev/batch-worker': 0.3.6(@standard-schema/spec@1.1.0)(convex@1.50.0(react@19.3.1))(prettier@3.10.1)(react@19.3.1)(typescript@5.9.3)(zod@4.6.7)
       '@convex-dev/rate-limiter': 0.3.2(convex@1.50.0(react@19.3.1))(react@19.3.1)

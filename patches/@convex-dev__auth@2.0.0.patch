@@ -1,0 +1,50 @@
+diff --git a/dist/components/password/validation.js b/dist/components/password/validation.js
+index 44e8f3540ffdedd34a8119d383dc2169dba1c613..33e7ba373f85a310e2bfc96c8e978c1a3e72138f 100644
+--- a/dist/components/password/validation.js
++++ b/dist/components/password/validation.js
+@@ -99,9 +99,6 @@ export function validateNewPassword(password, minimumLength) {
+     if (formatError !== null) {
+         return formatError;
+     }
+-    if (isCommonPassword(password)) {
+-        return { error: "PASSWORD_TOO_COMMON" };
+-    }
+     return null;
+ }
+ // Normalize to NFC before hashing or verifying so that two inputs that a user
+diff --git a/dist/lib/password.js b/dist/lib/password.js
+index e0facf8ba990466f8164dcc8c256ed0bdc5c5664..0c184d1f882f9a60002e789436b2e1f2b1533e93 100644
+--- a/dist/lib/password.js
++++ b/dist/lib/password.js
+@@ -9,5 +9,5 @@
+  * `components/password/validation.ts`). Thus the methods give this value to
+  * `validateNewPassword`.
+  */
+-export const DEFAULT_MIN_PASSWORD_LENGTH = 10;
++export const DEFAULT_MIN_PASSWORD_LENGTH = 8;
+ //# sourceMappingURL=password.js.map
+\ No newline at end of file
+diff --git a/src/components/password/validation.ts b/src/components/password/validation.ts
+index a40308b5ad12e6d4f447e5c0b467c1be8d27517d..06b645e848dba3b5f877e36260b2d902a2dab81b 100644
+--- a/src/components/password/validation.ts
++++ b/src/components/password/validation.ts
+@@ -133,9 +133,6 @@ export function validateNewPassword(
+   if (formatError !== null) {
+     return formatError;
+   }
+-  if (isCommonPassword(password)) {
+-    return { error: "PASSWORD_TOO_COMMON" };
+-  }
+   return null;
+ }
+ 
+diff --git a/src/lib/password.ts b/src/lib/password.ts
+index 69778a35d55a2f940f3aa66a763047af09684b75..3bcee0d757dff0d4837a78773490a4dca9d03428 100644
+--- a/src/lib/password.ts
++++ b/src/lib/password.ts
+@@ -9,4 +9,4 @@
+  * `components/password/validation.ts`). Thus the methods give this value to
+  * `validateNewPassword`.
+  */
+-export const DEFAULT_MIN_PASSWORD_LENGTH = 10;
++export const DEFAULT_MIN_PASSWORD_LENGTH = 8;
