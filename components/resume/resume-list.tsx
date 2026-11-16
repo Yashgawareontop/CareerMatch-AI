@@ -65,6 +65,7 @@ function ResumeItem({ resume }: { resume: ResumeSummary }) {
   const [showFull, setShowFull] = useState(false)
   const [actionError, setActionError] = useState<string | null>(null)
   const [retrying, setRetrying] = useState(false)
+  const [deleting, setDeleting] = useState(false)
 
   const canRetry = resume.status === "failed" || resume.status === "uploaded"
 
@@ -75,6 +76,18 @@ function ResumeItem({ resume }: { resume: ResumeSummary }) {
     setRetrying(false)
     // A failed parse is already shown from the row itself.
     if (error && error !== resume.error) setActionError(error)
+  }
+
+  async function onDelete() {
+    setActionError(null)
+    setDeleting(true)
+    try {
+      await remove({ resumeId: resume._id })
+      // On success the row disappears from listMine; no state to reset.
+    } catch {
+      setActionError("Could not delete this resume. Try again")
+      setDeleting(false)
+    }
   }
 
   return (
@@ -126,8 +139,8 @@ function ResumeItem({ resume }: { resume: ResumeSummary }) {
           <Button
             size="sm"
             variant="ghost"
-            disabled={resume.status === "parsing"}
-            onClick={() => void remove({ resumeId: resume._id })}
+            disabled={deleting || resume.status === "parsing"}
+            onClick={onDelete}
           >
             Delete
           </Button>
