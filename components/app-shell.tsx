@@ -21,10 +21,10 @@ import { cn } from "@/lib/utils"
 
 const NAV: { href: string; label: string; icon: LucideIcon }[] = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutGridIcon },
+  { href: "/resume", label: "Resume", icon: FileTextIcon },
   { href: "/matches", label: "Matches", icon: ListOrderedIcon },
   { href: "/jobs", label: "Jobs", icon: BriefcaseIcon },
   { href: "/tracker", label: "Tracker", icon: BookmarkIcon },
-  { href: "/resume", label: "Resume", icon: FileTextIcon },
 ]
 
 const SECONDARY = [
